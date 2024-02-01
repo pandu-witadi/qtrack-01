@@ -1,0 +1,13 @@
+
+# server
+server/node_modules
+server/private
+server/.tmp
+server/package-lock.json
+
+
+# client
+client/node_modules
+client/.tmp
+client/package-lock.json
+client/build
