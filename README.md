@@ -3,4 +3,4 @@
 - server : sailsjs-mongodb
 - client : react
 
-# qtrack-01 : origonal from planka
+# qtrack-01 : original from planka
