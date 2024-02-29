@@ -35,8 +35,8 @@ const buildData = () => {
 
 console.log('db:init .. start')
 
-const url_mongodb = 'mongodb://127.0.0.1:27017'
-const dbase = "qtrack-01"
+const url_mongodb = process.env.DATABASE_HOST
+const dbase = process.env.DATABASE_COL
 
 const client = new MongoClient(url_mongodb)
 console.log('db:init .. connect to mongodb ' + url_mongodb + '  dbase: ' + dbase)

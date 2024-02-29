@@ -16,13 +16,10 @@ module.exports.policies = {
     * (`true` allows public access)                                            *
     *                                                                          *
     ***************************************************************************/
-    'show-config': true,
 
-    // '*': 'is-authenticated',
+    '*': 'is-authenticated',
 
     'users/create': ['is-authenticated', 'is-admin'],
-    // 'users/create': true,
-
     'users/delete': ['is-authenticated', 'is-admin'],
 
     'projects/create': ['is-authenticated', 'is-admin'],
@@ -32,7 +29,5 @@ module.exports.policies = {
     'access-tokens/exchange-using-oidc': true,
 
     'test/server-check': true,
-
-    '*': true,
 
 };

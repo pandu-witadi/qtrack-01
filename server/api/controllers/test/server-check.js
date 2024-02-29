@@ -4,7 +4,7 @@
 module.exports = {
     async fn() {
         await sails.helpers.utils.logApi(this.req.isSocket, `GET /api/test : test/server-check`)
-        
+
         let curDate = new Date()
         return {
             isSuccess: true,
@@ -13,6 +13,7 @@ module.exports = {
               serverTime: curDate.toLocaleTimeString(),
               random: Math.random(),
               baseUrl: sails.config.custom.baseUrl,
+              databaseUrl: sails.config.custom.databaseUrl,
               tokenExpiresIn: sails.config.custom.tokenExpiresIn,
               userAvatarsPath: sails.config.custom.userAvatarsPath,
               userAvatarsUrl: sails.config.custom.userAvatarsUrl,
